@@ -1,0 +1,14 @@
+# Travis CI configuration for compoundfiles fork
+# This is a fork of the original project with added writing and editing capabilities
+language: python
+python:
+    - "3.6"
+    - "3.5"
+    - "3.4"
+    - "3.3"
+    - "3.2"
+    - "2.7"
+    - "pypy3"
+    - "pypy"
+install: "pip install -e .[test]"
+script: make test
